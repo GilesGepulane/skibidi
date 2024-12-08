@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Skibidi Hotel</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+nav {
+  background: #333;
+  color: white;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  overflow-x: auto; 
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+nav ul li {
+  padding: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  color: #007BFF;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  background: black url(bg.jpg) no-repeat center ;
+  background-size: cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.book h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-shadow: 2px 2px black;
+}
+
+.book p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.book .btn {
+  font-family: sans-serif;
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book .btn:hover {
+  background-color: #0056b3;
+}
+
+h2{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: xx-large;
+}
+
+p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+#rooms .room-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#rooms .room {
+  width: 30%;
+  background: white;
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#rooms .room img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+#rooms .room h3 {
+  margin: 15px 0;
+  color: #007BFF;
+  font-family: sans-serif;
+}
+
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0px;
+  font-size: 14px;
+}
+
+footer a {
+  color: #007BFF;
+}
+
+footer a:hover {
+  color: white;
+}
+
+  </style>
+</head>
+<body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="rooms.html">Rooms & Suites</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  <header>
+    <div class="book">
+      <h1>Welcome to Skibidi Hotel</h1>
+      <p style="background: green;">Experience luxury and comfort like never before.</p>
+      <a href="book.html" class="btn">Book Your Stay</a>
+    </div>
+  </header>
+
+      <h2 style="text-align: center;">About Us</h2>
+      <p style="text-align: center;">Located in Ohio Square, Skibidi Hotel offers unparalleled luxury, world-class amenities, and exceptional service. Whether you're here for business or leisure, we promise a memorable stay.</p>
+
+    <!-- Featured Rooms -->
+    <section id="rooms">
+      <h2>Skibidi Rooms</h2>
+      <div class="room-list">
+        <div class="room">
+          <a href="book.html">
+          <img src="deluxe.jpg" alt="Deluxe Room">
+          </a>
+          <a href="book.html">
+          <h3>Deluxe Room</h3>
+          </a>
+          <p>Starting at $150 per night.</p>
+        </div>
+        <div class="room">
+          <a href="book.html">
+          <img src="suite.jpg" alt="Suite Room">
+          </a>
+          <a href="book.html">
+          <h3>Suite Room</h3>
+          </a>
+          <p>Starting at $250 per night.</p>
+        </div>
+        <div class="room">
+          <a href="book.html">
+          <img src="penthouse.webp" alt="Penthouse">
+          </a>
+          <a href="book.html">
+          <h3>Penthouse</h3>
+          </a>
+          <p>Starting at $500 per night.</p>
+        </div>
+      </div>
+    </section>
+  <footer>
+    <p>&copy; 2024 Skibidi Hotel. All rights reserved.</p>
+    <p><a href="contact.html">Contact Us</a> | <a href="privacy.html">Privacy Policy</a></p>
+  </footer>
+</body>
+</html>
